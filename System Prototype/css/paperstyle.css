@@ -1,0 +1,272 @@
+body {
+  color: var(--text-color);
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-size: 14px;
+  line-height: normal;
+  margin: 0;
+}
+
+.serp__layout {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.serp__header {
+  background-color: var(--header-color);
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 60px;
+  padding: 10px 10px 0;
+  margin: 0;
+}
+
+@media (min-width: 800px) {
+  .serp__header {
+    align-items: center;
+    min-height: 40px;
+  }
+}
+
+.serp__header > div {
+  flex: 1;
+}
+
+@media (min-width: 600px) {
+  .serp__header .serp__search {
+    order: 2;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 990px) {
+  .serp__header .serp__search {
+    margin-left: 80px;
+  }
+}
+
+.serp__logo {
+  background-position: 50% 50%;
+  background-image: url("../img/se.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  flex: 0 0 50px;
+  height: 50px;
+  margin: 0 0 0 10px;
+}
+
+@media (min-width: 600px) {
+  .serp__logo {
+    order: 1;
+  }
+}
+
+.serp__header .serp__nav {
+  flex: 100%;
+}
+
+@media (min-width: 600px) {
+  .serp__header .serp__nav {
+    order: 3;
+    margin-left: 17px;
+  }
+}
+
+@media (min-width: 990px) {
+  .serp__header .serp__nav {
+    margin-left: 98px;
+  }
+}
+
+.serp__form {
+  background-color: var(--background-color);
+  border-radius: 2px;
+  border: 1px solid var(--border-color);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  display: flex;
+}
+
+@media (min-width: 800px) {
+  .serp__form {
+    max-width: 680px;
+    width: 100%;
+  }
+}
+
+.serp__form > div {
+  flex: 1;
+}
+
+.serp__query {
+  background: transparent;
+  color: var(--text-light-color);
+  display: block;
+  font-size: 16px;
+  margin: 0;
+  outline: none;
+  padding: 5px 10px 5px 15px;
+  width: 100%;
+  -webkit-appearance: none;
+}
+
+.serp__button,
+.serp__query {
+  border: 0;
+  height: 38px;
+  line-height: 38px;
+}
+
+.serp__button {
+  background-color: transparent;
+  cursor: pointer;
+  flex: 0 0 40px;
+  font-weight: 500;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.serp__button .serp__ico {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg height='17' width='17' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.87 11.67c-2.565 0-4.644-2.107-4.644-4.706 0-2.6 2.079-4.707 4.643-4.707 2.564 0 4.643 2.107 4.643 4.707 0 2.6-2.079 4.706-4.643 4.706m9.728 2.953l-3.908-3.962a6.998 6.998 0 0 0 1.05-3.698C13.738 3.117 10.662 0 6.868 0S0 3.117 0 6.963s3.075 6.963 6.87 6.963c1.458 0 2.81-.462 3.923-1.248l3.861 3.915a1.36 1.36 0 0 0 1.944 0 1.407 1.407 0 0 0 0-1.97' fill='%234f5f8f'/%3E%3C/svg%3E");
+  background-size: 20px 20px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 38px;
+  width: 40px;
+}
+
+.paper {
+  color: black;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-left: 130px;
+  margin-right: 10px;
+  width: 50%;
+  float: left;
+}
+
+.paper .tittle {
+  color: black;
+  padding: 0px;
+  font-size: large;
+  text-overflow: initial;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+.paper h4 {
+  color: grey;
+}
+
+.paper h4 span.key {
+  font-style: italic;
+  font-weight: 300;
+  color: rgb(97, 97, 96);
+  font-size: 12px;
+}
+
+.paper h4 span.divide {
+  color: blue;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.paper button {
+  /*background-color: blue;*/
+  border-radius: 5px;
+  padding: 8px;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+}
+
+.paper button a {
+  color: black;
+  text-decoration: none;
+}
+
+.paper button a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.paper button.pdf {
+  float: left;
+  width: 30%;
+  background-color: rgb(248, 45, 45);
+  color: black;
+}
+
+.paper button.bib {
+  float: right;
+  width: 30%;
+  background-color: rgb(68, 209, 68);
+  color: black;
+}
+
+.paper button.pdf:hover {
+  background-color: black;
+  color: white;
+}
+
+.paper button.bib:hover {
+  background-color: black;
+  color: white;
+}
+
+.paper p {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.related {
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  float: right;
+  width: 30%;
+}
+
+.related ul.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-overflow: ellipsis;
+}
+
+ul.list a {
+  color: rgb(47, 47, 240);
+}
+
+ul.list a:link {
+  font-weight: 600;
+  text-decoration: none;
+}
+ul.list a:hover {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    margin-left: 10px; /* , when the viewport is 800px or smaller */
+    margin-right: 10px;
+  }
+}
+
+#bibTex {
+  margin-bottom: 50px;
+  padding-top: 20px;
+  text-align: left;
+  background-color: lightblue;
+  margin-top: 20px;
+  display: none;
+  width: 100%;
+  overflow-wrap: break-word;
+  overflow: scroll;
+  float: inherit;
+}

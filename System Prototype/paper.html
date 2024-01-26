@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Search Results</title>
+    <meta
+      name="description"
+      value="Machine learnign research paper search engine"
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/colors.css" />
+    <link rel="stylesheet" type="text/css" href="./css/paperstyle.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <meta name="author" value="talifhani" />
+  </head>
+  <body>
+    <div class="serp">
+      <div class="serp__layout"> 
+        <div class="serp__header">
+          <div class="serp__search">
+            <form class="serp__form" action="serp.html" methode="GET">
+              <div>
+                <input
+                  name="q"
+                  type="search"
+                  value=""
+                  class="serp__query"
+                  maxlength="512"
+                  autocomplete="off"
+                  title="Search"
+                  aria-label="Search"
+                  dir="ltr"
+                  spellcheck="false"
+                  autofocus="autofocus"
+                />
+              </div>
+              <button class="serp__button" aria-label="Search" type="submit"></button>
+                <div class="serp__ico"></div>
+              </button>
+              
+            </form>
+            
+          </div>
+          <a class="serp__logo" href="index.html"></a>
+          <i class="material-icons">bookmark</i>
+         
+          
+        </div>
+        
+      </div>
+      <div>
+        <div class="paper">
+            <span class="tittle">Exploiting Auxiliary Data for Offensive Language Detection with Bidirectional Transformers</span><br />        
+            <h4><span class="divide"> | </span><span class="key"> Year:</span> 2021 </h4> 
+            <h4><span class="divide"> | </span> <span class="key"> Conference:</span> Association for Computational Linguistics</h4>
+            <h4><span class="divide"> | </span><span class="key">Authors:</span> Singh, Sumer and Li, Sheng</h4>
+            
+            <h4>Abstract</h4>
+            <p>Offensive language detection (OLD) has received increasing attention due to its societal impact. Recent work shows that bidirectional transformer based methods obtain impressive performance on OLD. However, such methods usually rely on large-scale well-labeled OLD datasets for model training. To address the issue of data/label scarcity in OLD, in this paper, we propose a simple yet effective domain adaptation approach to train bidirectional transformers. Our approach introduces domain adaptation (DA) training procedures to ALBERT, such that it can effectively exploit auxiliary data from source domains to improve the OLD performance in a target domain. Experimental results on benchmark datasets show that our approach, ALBERT (DA), obtains the state-of-the-art performance in most cases. Particularly, our approach significantly benefits underrepresented and under-performing classes, with a significant improvement over ALBERT.</p>
+            <button class="pdf"><a href="https://aclanthology.org/2021.woah-1.1.pdf", target="_blank">View PDF</a> </button>
+            <i class="material-icons">star_border</i>
+            <button class="bib" onclick="showBibteEntry()">Bibtex</button>
+            <div id="bibTex">
+                <pre>
+    @inproceedings{singh-li-2021-exploiting,
+        title = "Exploiting Auxiliary Data for Offensive Language Detection with Bidirectional Transformers",
+        author = "Singh, Sumer  and
+        Li, Sheng",
+        booktitle = "Proceedings of the 5th Workshop on Online Abuse and Harms (WOAH 2021)",
+        month = aug,
+        year = "2021",
+        address = "Online",
+        publisher = "Association for Computational Linguistics",
+        url = "https://aclanthology.org/2021.woah-1.1",
+        doi = "10.18653/v1/2021.woah-1.1",
+        pages = "1--5",
+    abstract = "Offensive language detection (OLD) has received increasing attention due to its societal impact. Recent work shows that bidirectional transformer based methods obtain impressive performance on OLD. However, such methods usually rely on large-scale well-labeled OLD datasets for model training. To address the issue of data/label scarcity in OLD, in this paper, we propose a simple yet effective domain adaptation approach to train bidirectional transformers. Our approach introduces domain adaptation (DA) training procedures to ALBERT, such that it can effectively exploit auxiliary data from source domains to improve the OLD performance in a target domain. Experimental results on benchmark datasets show that our approach, ALBERT (DA), obtains the state-of-the-art performance in most cases. Particularly, our approach significantly benefits underrepresented and under-performing classes, with a significant improvement over ALBERT.",
+    }
+                </pre>
+    
+            </div>
+            
+        </div>
+        <div class="related">
+            <h3>Related Searches</h3>
+            <ul class="list">
+                <li><a href="#">Artificial Intelligence</a></li>
+                <li><a href="#">Automation</a></li>
+                <li><a href="#">Machine leaning in e-commerce</a></li>
+              </ul>
+         </div>
+
+         
+
+         </div>
+         
+            
+        </body>
+
+  <script>
+    function showBibteEntry() {
+      var x = document.getElementById("bibTex");
+      
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+</html>
